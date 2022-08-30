@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Calculation</title>
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2 class="text-6xl text-center capitalize mb-16 mt-10">
+      calculet your <span class="text-pink-500 font-semibold">money!!!</span>
+    </h2>
+    <section class="w-9/12 mx-auto">
+      <div class="grid grid-cols-3 gap-5 text-center">
+        <div class="bg-purple-500 py-5 text-white rounded-lg">
+          <h2 class="text-4xl">Deposits</h2>
+          <h3 class="text-3xl mt-4">$<span id="depo-amount">00</span></h3>
+        </div>
+        <div class="bg-orange-500 py-5 text-white rounded-lg">
+          <h2 class="text-4xl">Withdrow</h2>
+          <h3 class="text-3xl mt-4">$<span id="with-amount">00</span></h3>
+        </div>
+        <div class="bg-cyan-500 py-5 text-white rounded-lg">
+          <h2 class="text-4xl">Total</h2>
+          <h3 class="text-3xl mt-4">$<span id="total-amount">1240</span></h3>
+        </div>
+      </div>
+    </section>
+    <section class="w-7/12 mx-auto mt-12">
+      <div class="grid grid-cols-2 gap-6">
+        <div
+          class="bg-lime-500 p-5 text-white rounded-xl flex items-center justify-center flex-col text-center"
+        >
+          <h1 class="text-4xl pb-5 capitalize">please deposit</h1>
+          <input
+            id="depo-field"
+            class="w-9/12 block py-2 px-5 focus:outline-none rounded text-black"
+            type="number"
+          />
+          <button
+            id="depo-btn"
+            class="rounded capitalize px-6 py-2 bg-rose-500 mt-6"
+          >
+            deposit
+          </button>
+        </div>
+        <!-- number two withdrow are / / -->
+
+        <div
+          class="bg-pink-500 p-5 text-white rounded-xl flex items-center justify-center flex-col text-center"
+        >
+          <h1 class="text-4xl pb-5 capitalize">please withdrow</h1>
+          <input id="with-field"
+            class="w-9/12 block py-2 px-5 focus:outline-none rounded text-black"
+            type="number"
+          />
+          <button id="with-Btn" class="rounded capitalize px-6 py-2 bg-violet-500 mt-6">
+            withdrow
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="bancalculet.js"></script>
+    <script src="withdrow.js"></script>
+  </body>
+</html>
